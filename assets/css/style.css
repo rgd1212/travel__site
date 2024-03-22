@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: none;
+  padding: none;
+}
+
+body{
+  background-color: blueviolet;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 77vh;
+  background-color: aquamarine;
+  
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.header__nav .logo{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  padding-top: 40px;
+  padding-left: 40px;
+  font-size: 42px;
+  color: white;
+  
+}
+
+.header__nav .nav-links{
+  list-style: none;
+  
+}
+
+.header__nav .nav-links .li{
+  display: inline-block;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
+.header__nav .nav-links .li .a{
+  font-family: "NTR";
+  font-weight: 400px;
+  font-style: normal;
+  color: white;
+  font-size: 24px;
+}
+
+.header__contenido{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header__contenido .introduccion{
+  font-family: "Nunito Sans", sans-serif; 
+  font-style: normal;
+  font-size: 38px;
+  color: white;
+}
+
+.header__contenido .boton_header{
+  padding-top: 40px;
+}
+
+.header__contenido .boton_header .boton__register{
+  width: 200px;
+  height: 50px;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-weight: bold;
+  color: #606940;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.header__contenido .boton_header .boton__register:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
