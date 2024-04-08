@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/modal.js"></script>
     <title>TravelSite</title>
     <link rel="icon" href="./assets/images/logo.svg" />
   </head>
+
   <body>
     <header>
       <div class="header">
-        
         <div class="header__nav">
           <p class="logo">TravelSite</p>
           <nav class="nav-links">
@@ -26,7 +27,7 @@
         <div class="header__contenido">
           <p class="introduccion">Our destination is never a place,</p>
           <p class="introduccion">but a new way of seeing things</p>
-          <div class="boton_header">
+          <div class="boton__header">
             <button class="boton__register">Register Now</button>
           </div>
         </div>
@@ -34,110 +35,117 @@
     </header>
 
     <main>
-        <p class="section__titulo">Visit Fantastic Places</p>
+      <p class="titulo-place">Visit Fantastic Places</p>
+      <div class="header-place">
+        <nav class="nav-place">
+          <ul>
+            <li><a href="#">Places</a></li>
+            <li><a>|</a></li>
+            <li><a href="#">Favorites</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <section class="section__places">
-        <div class="section__header">
-          <nav class="main__nav">
-            <ul>
-              <li><a href="#">Places</a></li>
-              <li><a>|</a></li>
-              <li><a href="#">Favorites</a></li>
-            </ul>
-          </nav>
+      <div id="card" class="card">
+        <div class="container">
+          <img class="image-card" src="./assets/images/brasil.svg" alt="" />
+          <div class="contenido">
+            <p class="titulo-card">Brazil</p>
+            <p class="informacion-card">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque faucibus feugiat sapien, id gravida nunc tristique
+              cursus. Cras aliquam maximus neque, et feugiat dui pharetra sed.
+            </p>
+          </div>
+          <div class="botones-card">
+            <button class="uno-card">Visit Placa</button>
+            <button class="dos-card">Add To Favorites</button>
+          </div>
         </div>
 
-        <div class="cards__container">
-          <div class="card">
-            <img class="card__imagen" src="./assets/images/brasil.svg" alt=""/>
-            <div class="card__informacion">
-              <p class="card__titulo">Brazil</p>
-              <p class="card__contenido">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque faucibus feugiat sapien, id gravida nunc tristique
-                cursus. Cras aliquam maximus neque, et feugiat dui pharetra sed.
-              </p>
-            </div>
-            <div class="card__botones">
-              <button class="card__boton__uno">Visit Placa</button>
-              <button class="card__boton__dos">Add To Favorites</button>
-            </div>
+        <div class="container">
+          <img class="image-card" src="./assets/images/portugal.svg" alt="" />
+          <div class="contenido">
+            <p class="titulo-card">Portugal</p>
+            <p class="informacion-card">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque faucibus feugiat sapien.
+            </p>
           </div>
 
-          <div class="card">
-            <img
-              class="card__imagen"
-              src="./assets/images/portugal.svg"
-              alt="" />
-            <div class="card__informacion">
-              <p class="card__titulo">Portugal</p>
-              <p class="card__contenido">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque faucibus feugiat sapien.
-              </p>
-            </div>
-
-            <div class="card__botones">
-              <button class="card__boton__uno">Visit Placa</button>
-              <button class="card__boton__dos">Add To Favorites</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <img class="card__imagen" src="./assets/images/mexico.svg" alt=""/>
-            <div class="card__informacion">
-              <p class="card__titulo">Mexico</p>
-              <p class="card__contenido">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque faucibus feugiat sapien, id gravida nunc tristique
-                cursus.
-              </p>
-            </div>
-            <div class="card__botones">
-              <button class="card__boton__uno">Visit Placa</button>
-              <button class="card__boton__dos">Add To Favorites</button>
-            </div>
+          <div class="botones-card">
+            <button class="uno-card">Visit Placa</button>
+            <button class="dos-card">Add To Favorites</button>
           </div>
         </div>
-      </section>
 
-      <section class="section__services">
-        <p class="section__titulo">Services</p>
+        <div class="container">
+          <img class="image-card" src="./assets/images/mexico.svg" alt="" />
+          <div class="contenido">
+            <p class="titulo-card">México</p>
+            <p class="informacion-card">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque faucibus feugiat sapien, id gravida nunc tristique
+              cursus.
+            </p>
+          </div>
+          <div class="botones-card">
+            <button class="uno-card">Visit Placa</button>
+            <button class="dos-card">Add To Favorites</button>
+          </div>
+        </div>
+      </div>
 
-        <div class="services__card">
-          <img class="services__image" src="./assets/images/hotel.svg" alt="Imagen de Hotel">
-          <div class="services__informacion">
-            <p class="service__titulo">
-              Accommodation
+      <div class="service">
+        <p class="titulo-service">Services</p>
+        <div class="container-service">
+          <div class="image-service">
+            <img src="./assets/images/hotel.svg" alt="Imagen de Hotel" />
+          </div>
+          <div class="contenido-service">
+            <p class="title-service">Accommodation</p>
+            <p class="informacion-service">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque faucibus feugiat sapien, id gravida nunc tristique
+              cursus. Cras aliquam maximus neque, et feugiat dui pharetra sed.
+              Sed at volutpat libero. Curabitur iaculis nunc fermentum ligula
+              porta, non elementum lorem lacinia. Vivamus hendrerit sagittis
+              sapien, sit amet suscipit risus. Nunc porttitor urna ac ex
+              lobortis, id finibus augue semper. Morbi urna massa, dignissim id
+              elit sed, tincidunt efficitur eros.
             </p>
-            <p class="services__contenido">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus feugiat sapien, id gravida nunc tristique cursus. Cras aliquam maximus neque, et feugiat dui pharetra sed. Sed at volutpat libero. Curabitur iaculis nunc fermentum ligula porta, non elementum lorem lacinia. Vivamus hendrerit sagittis sapien, sit amet suscipit risus. Nunc porttitor urna ac ex lobortis, id finibus augue semper. Morbi urna massa, dignissim id elit sed, tincidunt efficitur eros.
-            </p>
-            <button class="services__boton">
-              Learn More
+            <button class="boton-service">
+              <p class="text-btn-service">Learn More</p>
             </button>
           </div>
         </div>
 
-        <div class="services__card">
-          <div class="services__informacion">
-            <p class="service__titulo">
-              Transport
+        <div class="container-service">
+          <div class="contenido-service">
+            <p class="title-service">Transport</p>
+            <p class="informacion-service">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque faucibus feugiat sapien, id gravida nunc tristique
+              cursus. Cras aliquam maximus neque, et feugiat dui pharetra sed.
+              Sed at volutpat libero. Curabitur iaculis nunc fermentum ligula
+              porta, non elementum lorem lacinia. Vivamus hendrerit sagittis
+              sapien, sit amet suscipit risus. Nunc porttitor urna ac ex
+              lobortis, id finibus augue semper. Morbi urna massa, dignissim id
+              elit sed, tincidunt efficitur eros.
             </p>
-            <p class="services__contenido">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus feugiat sapien, id gravida nunc tristique cursus. Cras aliquam maximus neque, et feugiat dui pharetra sed. Sed at volutpat libero. Curabitur iaculis nunc fermentum ligula porta, non elementum lorem lacinia. Vivamus hendrerit sagittis sapien, sit amet suscipit risus. Nunc porttitor urna ac ex lobortis, id finibus augue semper. Morbi urna massa, dignissim id elit sed, tincidunt efficitur eros.            </p>
-            <button class="services__boton">
-              Learn More
+            <button class="boton-service">
+              <p class="text-btn-service">Learn More</p>
             </button>
           </div>
-          <img class="services__image" src="./assets/images/autos.svg" alt="Imagen de Taxi">
+          <div class="image-service">
+            <img src="./assets/images/autos.svg" alt="Imagen de Taxi" />
+          </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <footer>
-      <div  class="footer">
-
+      <div class="footer">
         <div class="footer__links">
           <ul>
             <li><a href="#">Home</a></li>
@@ -148,11 +156,8 @@
           </ul>
         </div>
 
-          <p class="footer__texto">
-            All rights reserved.
-          </p>
-
+        <p class="footer__texto">All rights reserved.</p>
       </div>
-      </footer>
+    </footer>
   </body>
 </html>

@@ -4,14 +4,16 @@
 
 *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body{
-  margin: 0;
   background-color: #42AA85;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
 .header{
@@ -20,11 +22,16 @@ body{
   background-position: center center;
   background-size: cover;
   height: 461px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header .header__nav{
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .header .header__nav .logo{
@@ -57,16 +64,11 @@ body{
 }
 
 .header .header__contenido{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: blue;
-  align-items: center;
-  width: 544px;
+  /* background-color: blue; */
+  width: 555px;
   height: 178px;
-  margin-top: 149px;
-  margin-left: 448px;
+  margin-top: 78px;
+  text-align: center;
 
 }
 
@@ -77,11 +79,12 @@ body{
   color: white;
 }
 
-.header__contenido .boton_header{
-  padding-top: 40px;
+.header__contenido .boton__header{
+  margin-top: 40px;
+  margin-left: auto;
 }
 
-.header__contenido .boton_header .boton__register{
+.header__contenido .boton__header .boton__register{
   width: 200px;
   height: 50px;
   font-family: "Nunito Sans";
@@ -93,41 +96,40 @@ body{
   cursor: pointer;
 }
 
-.header__contenido .boton_header .boton__register:hover{
+.header__contenido .boton__header .boton__register:hover{
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
 }
 
-.section__places, .section__services{
-  width: 100%;
-}
+/* segunda parte */
+/* ---------------------------------------------------- */
 
-.section__titulo{
+.titulo-place , .titulo-service{
   color: #000000;
   font-family: "Nunito Sans";
   font-weight: bold;
   font-size: 36px;
   text-align: center;
-  padding-top: 48px;
+  margin-top: 96px;
 }
 
-.section__places .section__header{
+.header-place{
   text-align: center;
   padding-top: 39px;
 }
 
-.section__places .main__nav li{
+.nav-place li{
   display: inline-block;
   padding-top: 20px;
 }
 
-.section__places .main__nav li a{
+.nav-place li a{
   color: white;
   font-family: "NTR";
   font-size: 24px;
 }
 
-.section__places .cards__container{
+.card{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -136,7 +138,7 @@ body{
 
 }
 
-.section__places .cards__container .card{
+.card .container{
   /* width: 100%; */
   margin: 20px;
   border-radius: 8px;
@@ -145,15 +147,16 @@ body{
   width: 344px;
   height: 458px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
-.section__places .cards__container .card .card__imagen{
+.card .container .imagen-card{
   width: 344px;
   height: 183px;
   
 }
 
-.section__places .cards__container .card .card__informacion{
+.card .container .contenido{
   padding-left: 36px;
   padding-right: 36px;
   height: 150px;
@@ -163,37 +166,38 @@ body{
   border: none;
 }
 
-.section__places .cards__container .card .card__informacion .card__titulo{
+.card .container .contenido .titulo-card{
   font-family: "Nunito Sans";
   font-size: 20px;
   font-weight: bold;
   
 }
 
-.section__places .cards__container .card .card__informacion .card__contenido{
+.card .container .contenido .informacion-card{
   font-family: "Nunito Sans";
   font-size: 14px;
   font-weight: normal;
   padding-top: 11.30px;
 }
 
-.section__places .cards__container .card .card__botones{
+.card .container .botones-card{
   display: flex;
   justify-content: space-between;
   padding-top: 8px;
   padding: 27px;
 }
 
-.section__places .cards__container .card .card__botones .card__boton__uno{
+.card .container .botones-card .uno-card{
   background: #42AA85;
   color: white;
   border: none;
   width: 120px;
   height: 40px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
-.section__places .cards__container .card .card__botones .card__boton__dos{
+.card .container .botones-card .dos-card{
   background: #ffffff;
   /* border: none; */
   border-color: #42AA85;
@@ -204,21 +208,69 @@ body{
   font-weight: bold;
   width: 140px;
   height: 40px;
+  cursor: pointer;
 }
 
-.section__services .services__card{
+
+
+/* tercera parte */
+/* ------------------------------------------------- */
+
+.service{
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+}
+
+.service .container-service{
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 106px;
-  padding-left: 72px;
-  padding-right: 89px;
+  background-color: #B7B7B7;
+  margin-left: 50px;
+  position: relative;
 }
 
-.section__services .services__card .services__image{
+.service .container-service .image-services{
   width: 689px;
   height: 469px;
-  position: relative;
+
+}
+
+.service .container-service .contenido-service{
+  width: 700px;
+  height: 368px;
+  background-color: aqua;
+  margin-left: 590px;
+  position: absolute;
+}
+
+.service .container-service .contenido-service .title-service{
+  font-family: "Nunito Sans";
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 54px;
+  margin-left: 50px;
+}
+
+.service .container-service .contenido-service .informacion-service{
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 26px;
+  margin-left: 42px;
+}
+
+.service .container-service .contenido-service .boton-service{
+  margin-top: 37px;
+  margin-left: 42px;
+  width: 160px;
+  height: 45px;
+}
+
+.service .container-service .contenido-service .boton-service .text-btn-service{
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .footer{
